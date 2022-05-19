@@ -1,5 +1,99 @@
-@use 'atoms';
-@use 'molecules';
-@use 'o';
+@import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap");
 @use 'variables';
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.page-wrapper header {
+  width: 100%;
+  height: 100vh;
+  text-decoration: none;
+  background: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODQ4NDUwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMS5qcGc.jpg") fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-wrapper h1 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Elsie Swash Caps", cursive;
+  padding: 30px;
+}
+
+.page-wrapper h2 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 40px;
+  top: 48%;
+  left: 20%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.page-wrapper abbr {
+  text-decoration: none;
+}
+
+.summary {
+  color: green;
+  width: 49%;
+  padding: 20px;
+  margin-top: -120px;
+  background-color: #fff;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: #ff8a00;
+  border: 2px;
+}
+
+.summary a {
+  text-decoration: none;
+}
+
+.summary h3 {
+  text-align: center;
+  color: #003366;
+  font-size: 30px;
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+.preamble {
+  position: relative;
+  margin-left: 50%;
+  width: 49%;
+  padding: 20px;
+  margin-top: -120px;
+  background-color: #fff;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  z-index: 1;
+  background-color: #66ff33;
+  border: 2px;
+}
+
+.preamble a {
+  text-decoration: none;
+}
+
+.preamble h3 {
+  text-align: center;
+  color: #003366;
+  font-size: 30px;
+  font-family: 'Elsie Swash Caps', cursive;
+}
 /*# sourceMappingURL=style.css.map */

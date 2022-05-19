@@ -6,10 +6,24 @@
 @import 'organisms';  // can shorten the name if we like :)
 @import 'variables';
 
-.css-zen-garden {
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.page-wrapper {
     @include banner;
 }
 
-section {
-    @include cards;
+.summary {
+    color: green;
+    // display: flex;
+    @include summery-and-preamble;
+    @include borderbackgrounds(#ff8a00, 2px)
+}
+.preamble {
+    position: relative;
+    margin-left: 50%;
+    @include summery-and-preamble;
+    @include borderbackgrounds(#66ff33, 2px)
 }
