@@ -1,0 +1,9 @@
+// @use 'variables';
+
+@mixin linkstyle {
+    a {
+        text-decoration: none;
+        color: $logo-text;
+        background: $bg-links-color;
+    }
+}

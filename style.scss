@@ -2,4 +2,9 @@
 // styles.scss
 @use 'atoms';  // assumes file is named _atoms.scss
 @use 'molecules';
-@use 'organisms' as o;  // can shorten the name if we like :)
+@use 'o';  // can shorten the name if we like :)
+@use 'variables';
+
+.summary {
+    @include linkstyle;
+}
