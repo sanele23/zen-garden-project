@@ -1,10 +1,15 @@
 
 // styles.scss
-@use 'atoms';  // assumes file is named _atoms.scss
-@use 'molecules';
-@use 'o';  // can shorten the name if we like :)
-@use 'variables';
 
-.summary {
-    @include linkstyle;
+@import 'atoms';  // assumes file is named _atoms.scss
+@import 'molecules';
+@import 'organisms';  // can shorten the name if we like :)
+@import 'variables';
+
+.css-zen-garden {
+    @include banner;
+}
+
+section {
+    @include cards;
 }
