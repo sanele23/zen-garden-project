@@ -1,1 +1,104 @@
-// $organisms-color: purple;
+// @mixin bg-aside-headings {
+//     h3 {
+//         background-color: green;
+//         padding: 0 10px;
+//         border-radius: 5px;
+//     }
+// }
+
+// @mixin media-1 {
+//     @media only screen and (max-width: 400px) {
+//         .intro {
+//             display: grid;
+//             grid-template-columns: 1fr;
+//             grid-template-rows: auto;
+//             grid-gap: 10px;
+//             grid-area: 
+//             'header'
+//             'summary'
+//             'preamble';
+
+//         }
+//         header {
+//             grid-area: header;
+//             width: 100%;
+//             height: 100vh;
+//             overflow: hidden;
+//         }
+//         .summary {
+//             grid-area: summary;
+//             padding: 0;
+//         }
+//         .preamble {
+//             grid-area: preamble;
+//             padding: 0;
+
+//         }
+//     }
+// }
+
+// @mixin media-2 {
+//     @media only screen and (max-width: 400px) {
+//         .supporting {
+//             display: grid;
+//             grid-template-columns: 1fr;
+//             grid-template-columns: auto;
+//             grid-gap: 10px;
+//             /* background-color: rgba(0, 0, 0, .7); */
+//             grid-template-areas: 
+//             'explanation '
+//             'participation'
+//             'requirements'
+//             'footer';
+//         }
+//         .explanation {
+//             grid-area: explanation;
+//             padding: 0;
+//         }
+//         .participation {
+//             grid-area: participation;
+//             padding: 0;
+//         }
+//         .requirements {
+//             grid-area: requirements;
+//             padding: 0;
+//         }
+//         .footer {
+//             grid-area: footer;
+//             padding: 0;
+//         }
+//     } 
+    
+// }
+
+// @mixin media-3 {
+
+//     @media only screen and (max-width: 400px) {
+//         height: 0;
+
+//         .wrapper {
+//             display: grid;
+//             grid-template-columns: 1fr;
+//             grid-template-columns: auto;
+//             grid-gap: 10px;
+//             grid-template-areas: 
+//             'design-selection '
+//             'design-archives'
+//             'requirements';
+//         }
+//         .design-selection {
+//             grid-area: design-selection;
+//             padding: 0;
+//         }
+//         .design-archives {
+//             grid-area: design-archives;
+//             padding: 0;
+//         }
+//         .zen-resources {
+//             grid-area: zen-resources;
+//             padding: 0;
+//         }
+//     } 
+    
+// }
+

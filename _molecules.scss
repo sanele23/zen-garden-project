@@ -1,0 +1,169 @@
+//Header summary element moving on the page
+@mixin container-moving-summary {
+    animation: moving-container-summary 5s ease-in-out;
+
+    @keyframes moving-container-summary {
+        0% {
+            transform: translateX(40%);
+            opacity: 5px;
+        }
+        20% {
+            transform: translateY(-20%);
+            opacity: 1;
+        }
+        40% {
+            transform: translateX(20%);
+            opacity: 1;
+
+        }
+        60% {
+            transform: translateY(-20%);
+            opacity: 1;
+        }
+        80% {
+            transform: translateX(-80%);
+            opacity: 1;
+            // left: 50%;
+        }
+        // 90% {
+        //     transform: translateY(-90%);
+        //     opacity: 1;
+        //     // left: 50%;
+        // }
+        // 100% {
+        //     transform: translateX(-10vh);
+        //     opacity: 5px;
+        // }
+    }
+    
+}
+
+//Header preamble element moving on the page
+@mixin container-moving-preamble {
+    animation: moving-container-preamble 5s ease-in-out;
+
+    @keyframes moving-container-preamble {
+        0% {
+            transform: translateX(-40%);
+            opacity: 5px;
+            left: 50%;
+        }
+        20% {
+            transform: translateY(20%);
+            opacity: 1;
+            // left: 50%;
+        }
+        40% {
+            transform: translateX(-20%);
+            opacity: 1;
+            // left: 50%;
+        }
+        60% {
+            transform: translateY(20%);
+            opacity: 1;
+            // left: 50%;
+        }
+        80% {
+            transform: translateX(80%);
+            opacity: 1;
+            // left: 50%;
+        }
+        // 90% {
+        //     transform: translateY(-90%);
+        //     opacity: 1;
+        //     // left: 50%;
+        // }
+        // 100% {
+        //     transform: translateX(-10vh);
+        //     opacity: 5px;
+        // }
+    }
+    
+}
+
+//Header zen garden text that is in orange color moving on the page
+@mixin zen-garden-text {
+    h1 {
+        animation: zen-garden 5s ease-out;
+
+        @keyframes zen-garden {
+            0% {
+                transform: translateY(0);
+            }
+            10%,
+            20%,
+            30% {
+                visibility: visible;
+                transform: translateY(-100vh);
+            }
+            70%,
+            80%,
+            90% {
+                visibility: visible;
+                transform: translateY(100vh);
+            }
+            10%,
+            20%,
+            30% {
+                visibility: visible;
+                transform: translateY(-100vh);
+            } 
+                   
+        }
+    }
+
+}  
+
+//The spinning of the word on the home page screen in the center "The Beauty of CSS Design"
+@mixin beautiful-on-homepage {
+   h2 {
+       animation: animateText 5s ease-in;
+
+    @keyframes animateText {
+        0% {
+            /* background-position: 0 0; */
+            transform: perspective(1000px) rotateY(360deg)
+            rotateY(15deg) translateY(-30px);
+            font-size: 10rem;
+            
+        }
+        // 10%,
+        // 20%,
+        30% {
+            /* background-position: 0 0; */
+            transform: perspective(-1000px) rotateY(360deg)
+            rotateY(15deg) translateY(30px);
+            font-size: 8rem;
+            background: none;
+        }
+        // 70%,
+        // 80%,
+        50% {
+            /* background-position: 0 0; */
+            transform: perspective(500px) rotateY(360deg)
+            rotateY(45deg) translateY(50px);
+            font-size: 6rem;
+            background: none;
+        }
+        // 10%,
+        // 20%,
+        80% {
+            /* background-position: 0 0; */
+            transform: perspective(1000px) rotateY(0deg)
+            rotateX(15deg) translateY(-30px);
+            font-size: 5rem;
+            background: none;
+        }
+        80% {
+            /* background-position: 0 0; */
+            transform: perspective(1000px) rotateY(360deg)
+            rotateX(45deg) translateY(30px);
+            font-size: 5rem;
+            background: none;
+        }
+        
+    }
+}
+
+    
+}

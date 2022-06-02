@@ -5,8 +5,24 @@ $logo-color-overlay: rgba(black, .5);
 $logo-text: #fff;
 $text-parimary-size: 40px;
 $text-primary-font: 'Elsie Swash Caps', cursive;
+$footer-hover-color: #008000;
 
 
 $h2-color: #ff9300;
-$bg-links-color: #000066;
+$bg-links-color: #000066;   
 $headings: #003366;
+
+//Hover links color
+$hover: #98ca;
+
+// Sidebar background colors
+$selectColor: #231333;
+$archiveColor: #233;
+$resourceColor: #453;
+
+//Preamble background color
+$preamble-background: rgb(120, 241, 7);
+
+//Background box shadow property used
+$box-shadow: inset 0 0 20px rgba(23, 225, 143, 1),
+    0 0 50px $headings;

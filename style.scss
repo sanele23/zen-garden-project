@@ -1,9 +1,6 @@
-
-// styles.scss
-
-@import 'atoms';  // assumes file is named _atoms.scss
+@import 'atoms';
 @import 'molecules';
-@import 'organisms';  // can shorten the name if we like :)
+@import 'organisms';
 @import 'variables';
 
 * {
@@ -11,19 +8,154 @@
     padding: 0;
     margin: 0;
 }
+
 .page-wrapper {
-    @include banner;
+    @include page-wrapper-content;
+    // @include media-1;
+    // @include media-2
+}
+
+.intro {
+    @include intro-content;
+}
+
+header {
+    @include header-content;
+    @include zen-garden-text;
+    @include beautiful-on-homepage;
 }
 
 .summary {
-    color: green;
-    // display: flex;
-    @include summery-and-preamble;
-    @include borderbackgrounds(#ff8a00, 2px)
+    @include summery-content;    
 }
 .preamble {
-    position: relative;
-    margin-left: 50%;
-    @include summery-and-preamble;
-    @include borderbackgrounds(#66ff33, 2px)
+    @include preamble;
 }
+
+
+.supporting {
+    @include supporting-content;
+    @include inside-a-tags;
+    line-height: 1.5rem;
+}
+
+aside {
+    @include asidebar;
+    // @include media-3;
+}
+
+.main h3 {
+    color: $bg-links-color; //rgb(6, 30, 109)
+    padding-bottom: 10px;
+}
+
+.design-selection {
+    color: $logo-text;
+    padding: 10px;
+    background: $selectColor;
+    margin: 20px;
+    border-bottom-right-radius: 50px;
+    // @include bg-aside-headings;
+
+    li a{
+        color: $logo-text;
+    }
+}
+
+.design-archives {
+    color: $logo-text;
+    padding: 10px;
+    background: $archiveColor;
+    margin: 20px;
+    border-bottom-right-radius: 50px;
+    // @include bg-aside-headings;
+
+    li a {
+        color: $logo-text;
+    }
+}
+
+.zen-resources {
+    color: $logo-text;
+    padding: 10px;
+    background: $resourceColor;
+    margin: 20px;
+    border-bottom-right-radius: 50px;
+    // @include bg-aside-headings;
+
+    abbr {
+        color: $logo-text;
+    }
+    abbr:hover {
+        color: $hover;
+        transition: 0.1s;
+    }
+    [title] {
+        color: $logo-text;
+    }
+}
+
+aside .select {
+    color: $h2-color;
+    font-size: 30px;
+}
+aside nav li {
+    list-style-type: none;
+}
+aside nav li a {
+    text-decoration: none;
+    color: #000;
+    line-height: 2rem;
+}
+aside nav li a:hover {
+    color: $hover;
+    transition: 0.1s;
+}
+
+.design-archives h3 {
+    color: $h2-color;
+    margin-top: 30px;
+}
+.zen-resources h3 {
+    color: $h2-color;
+    margin-top: 20%;
+}
+.zen-resources ul li {
+    list-style-type: none;
+}
+.zen-resources ul li a {
+    text-decoration: none;
+    line-height: 2rem;
+    color: #000;
+}
+.zen-resources ul li a:hover {
+    color: #98ca;
+    transition: 0.1s;
+}
+.zen-resources abbr {
+    text-decoration: none;
+}
+footer {
+    display: flex;
+    grid-area: footer;
+    background: $headings;
+    box-shadow: $box-shadow;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+
+
+    a {
+        color: $logo-text;
+        text-decoration: none;
+        font-family: bold;
+        padding: 10px 20px;
+        
+    }
+    a:hover {
+        color: $logo-text;
+        background: $footer-hover-color;
+        border-radius: 5px;
+    }
+}
+
