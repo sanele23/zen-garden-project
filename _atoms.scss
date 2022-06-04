@@ -30,7 +30,7 @@
     // background: url(/img/17.jpeg)fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    grid-gap: 20px;
+    // grid-gap: 20px;
     margin: 0 20px;
     // background: yellowgreen;
     grid-template-areas: 
@@ -81,7 +81,7 @@
 }
 
 @mixin  header-content {
-    // background: url(/img/9.jpeg) fixed;
+    background: $logo-color-overlay;
     background: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODQ4NDUwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMS5qcGc.jpg') fixed;
     width: 100%;
     height: 100vh; 
