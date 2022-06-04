@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Elsie+Swash+Caps:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Elsie+Swash+Caps:wght@900&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -16,8 +20,6 @@
       grid-template-columns: auto;
   background-repeat: no-repeat;
   background-size: cover;
-  grid-gap: 20px;
-  margin: 0 20px;
       grid-template-areas: 'intro intro' 'aside main' 'aside main';
 }
 
@@ -46,19 +48,18 @@
 .intro {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-gap: 20px;
   /* background-color: rgba(0, 0, 0, .7); */
-      grid-template-areas: 'header header' 'summery preamble';
+      grid-template-areas: 'header' 'summery' 'preamble';
 }
 
 .intro header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: header;
 }
 
@@ -127,8 +128,8 @@
 }
 
 .intro .preamble {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: preamble;
   -webkit-animation: moving-container-preamble 5s ease-in-out;
           animation: moving-container-preamble 5s ease-in-out;
@@ -193,8 +194,9 @@
 }
 
 header {
-  background: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODQ4NDUwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMS5qcGc.jpg") fixed;
-  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODQ4NDUwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMS5qcGc.jpg") fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) rgba(5, 5, 5, 0.5)), url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODQ4NDUwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMS5qcGc.jpg") fixed;
+  max-width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -203,13 +205,11 @@ header {
 }
 
 header h1 {
-  color: #ff9300;
+  color: #fff;
   font-size: 40px;
   padding: 40px;
   font-family: "Elsie Swash Caps", cursive;
   text-transform: uppercase;
-  -webkit-box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
-          box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
 }
 
 header h2 {
@@ -217,7 +217,6 @@ header h2 {
   color: #fff;
   font-size: 50px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5);
   margin: 0 22%;
   margin-top: 12%;
   border-radius: 5px;
@@ -370,13 +369,13 @@ header h2 {
 }
 
 .summary {
-  background: #000066;
   padding: 20px;
   color: #fff;
   height: 8rem;
-  margin-top: -25%;
+  margin-top: -23%;
   border-radius: 0 5px 5px 0px;
   line-height: 1.5rem;
+  text-align: center;
 }
 
 .summary a {
@@ -403,9 +402,7 @@ header h2 {
 }
 
 .preamble {
-  background: #78f107;
   padding: 20px;
-  margin-top: -25%;
   border-radius: 5px 0 0 5px;
   line-height: 1.5rem;
 }
@@ -424,6 +421,7 @@ header h2 {
 .preamble h3 {
   color: #003366;
   padding-bottom: 10px;
+  font-family: "Elsie Swash Caps", cursive;
 }
 
 .supporting {
@@ -493,7 +491,8 @@ header h2 {
   color: #fff;
   -webkit-transition: 0.1s;
   transition: 0.1s;
-  background: rgba(0, 0, 0, 0.5);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(rgba(0, 0, 0, 0.5) rgba(5, 5, 5, 0.5));
 }
 
 .supporting abbr {
@@ -505,7 +504,8 @@ header h2 {
   color: #fff;
   -webkit-transition: 0.1s;
   transition: 0.1s;
-  background: rgba(0, 0, 0, 0.5);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(rgba(0, 0, 0, 0.5) rgba(5, 5, 5, 0.5));
 }
 
 aside {
@@ -538,6 +538,7 @@ aside aside nav li a:hover {
 .main h3 {
   color: #000066;
   padding-bottom: 10px;
+  font-family: "Elsie Swash Caps", cursive;
 }
 
 .design-selection {
@@ -587,7 +588,7 @@ aside aside nav li a:hover {
 }
 
 aside .select {
-  color: #ff9300;
+  color: #fff;
   font-size: 30px;
 }
 
@@ -608,12 +609,12 @@ aside nav li a:hover {
 }
 
 .design-archives h3 {
-  color: #ff9300;
+  color: #fff;
   margin-top: 30px;
 }
 
 .zen-resources h3 {
-  color: #ff9300;
+  color: #fff;
   margin-top: 20%;
 }
 
@@ -628,6 +629,7 @@ aside nav li a:hover {
 }
 
 .zen-resources ul li a:hover {
+  position: relative;
   color: #98ca;
   -webkit-transition: 0.1s;
   transition: 0.1s;

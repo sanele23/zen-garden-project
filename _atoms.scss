@@ -31,7 +31,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     // grid-gap: 20px;
-    margin: 0 20px;
+    // margin: 0 20px;
     // background: yellowgreen;
     grid-template-areas: 
     'intro intro'
@@ -53,13 +53,14 @@
 
 @mixin intro-content {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-gap: 20px;
         /* background-color: rgba(0, 0, 0, .7); */
         grid-template-areas: 
-        'header header'
-        'summery preamble';
+        'header'
+        'summery'
+        'preamble';
 
     header {
         grid-area: header;
@@ -74,16 +75,15 @@
     }
     .preamble {
         grid-area: preamble;
-        @include container-moving-preamble ;
+        @include container-moving-preamble;
         
     }
     
 }
 
 @mixin  header-content {
-    background: $logo-color-overlay;
-    background: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODQ4NDUwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMS5qcGc.jpg') fixed;
-    width: 100%;
+    background:  $logo-color-overlay, url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODQ4NDUwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMS5qcGc.jpg') fixed;
+    max-width: 100%;
     height: 100vh; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,16 +93,17 @@
         color: $h2-color;
         font-size: $text-parimary-size;
         padding: 40px;
+        // font-family: $confortaa;
         font-family: $text-primary-font;
         text-transform: uppercase;
-        box-shadow: $box-shadow;
+        // box-shadow: $box-shadow;
     }
     h2 {
         position: relative;
         color: $logo-text;
         font-size: 50px;
         text-align: center;
-        background: $logo-color-overlay;
+        // background: $logo-color-overlay;
         margin: 0 22%;
         margin-top: 12%;
         border-radius: 5px;
@@ -115,13 +116,14 @@
 }
 
 @mixin summery-content {
-        background: $bg-links-color;
+        // background: $bg-links-color;
         padding: 20px;
         color: $logo-text;
         height: 8rem;
-        margin-top: -25%;
+        margin-top: -23%;
         border-radius: 0 5px 5px 0px;
         line-height: 1.5rem;
+        text-align: center;
         
     a {
         text-decoration: none;
@@ -143,12 +145,11 @@
 }
 
 @mixin preamble {
-        background: $preamble-background;
+        // background: $preamble-background;
         padding: 20px;
-        margin-top: -25%;
+        // margin-top: -25%;
         border-radius: 5px 0 0 5px;
-        line-height: 1.5rem;
-    
+        line-height: 1.5rem;    
     abbr {
         text-decoration: none;
         font-weight: bold;
@@ -159,10 +160,9 @@
     }
     h3 {
         color: $headings;
-        padding-bottom: 10px;
-    
+        padding-bottom: 10px; 
+        font-family: $sub-header;   
     }
-    
 }
 
 @mixin supporting-content {

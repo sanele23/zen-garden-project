@@ -47,6 +47,8 @@ aside {
 .main h3 {
     color: $bg-links-color; //rgb(6, 30, 109)
     padding-bottom: 10px;
+    font-family: $sub-header;
+    // font-size: 30px;
 }
 
 .design-selection {
@@ -129,6 +131,7 @@ aside nav li a:hover {
     color: #000;
 }
 .zen-resources ul li a:hover {
+    position: relative;
     color: #98ca;
     transition: 0.1s;
 }

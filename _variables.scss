@@ -1,14 +1,20 @@
+// @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Elsie+Swash+Caps:wght@900&display=swap');
 
 //CSS Zen Garden
-$logo-color-overlay: rgba(black, .5);
+$logo-color-overlay: linear-gradient(rgba(0, 0, 0, .5) rgba(5, 5, 5, .5)); //rgba(black, .5) (rgba(20,0,20,0.8), rgba(60,20,20,0.8))
 $logo-text: #fff;
 $text-parimary-size: 40px;
 $text-primary-font: 'Elsie Swash Caps', cursive;
 $footer-hover-color: #008000;
+$paragraphs: 'Elsie Swash Caps', cursive;
+$sub-header: 'Elsie Swash Caps', cursive;
+$confortaa: 'Comfortaa', cursive;;
 
 
-$h2-color: #ff9300;
+$h2-color: #fff;
 $bg-links-color: #000066;   
 $headings: #003366;
 
