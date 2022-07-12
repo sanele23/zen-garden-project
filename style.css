@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Darker+Grotesque:wght@300&family=Elsie+Swash+Caps:wght@900&family=Kanit&family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Elsie+Swash+Caps:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Darker+Grotesque:wght@300&family=Elsie+Swash+Caps:wght@900&family=Kanit&family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Elsie+Swash+Caps:wght@900&display=swap");
@@ -61,6 +63,35 @@
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
+  margin-bottom: 20px;
+}
+
+.intro header h2 {
+  --c: #fff;
+  /* the color */
+  --b: .1em;
+  /* border length*/
+  --d: 20px;
+  /* the cube depth */
+  --_s: calc(var(--d) + var(--b));
+  color: var(--c);
+  border: solid #ffff;
+  border-width: var(--b) var(--b) var(--_s) var(--_s);
+  background: conic-gradient(at left var(--d) bottom var(--d) #0000 90deg, white 0 225deg, white 0) border-box, conic-gradient(at left var(--_s) bottom var(--_s), #0000 90deg, var(--c) 0) 0 100%/calc(100% - var(--b)) calc(100% - var(--b)) border-box;
+  -webkit-transform: translate(calc(var(--d)/-1), var(--d));
+          transform: translate(calc(var(--d)/-1), var(--d));
+  -webkit-clip-path: polygon(var(--d) 0%, var(--d) 0%, 100% 0%, 100% calc(100% - var(--d)), 100% calc(100% - var(--d)), var(--d) calc(100% - var(--d)));
+          clip-path: polygon(var(--d) 0%, var(--d) 0%, 100% 0%, 100% calc(100% - var(--d)), 100% calc(100% - var(--d)), var(--d) calc(100% - var(--d)));
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.intro header h2:hover {
+  --_p: 0%;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-clip-path: polygon(0% var(--d), var(--d) 0%, 100% 0%, 100% calc(100% - var(--d)), calc(100% - var(--d)) 100%, 0% 100%);
+          clip-path: polygon(0% var(--d), var(--d) 0%, 100% 0%, 100% calc(100% - var(--d)), calc(100% - var(--d)) 100%, 0% 100%);
 }
 
 .intro .summary {
@@ -200,8 +231,6 @@ header {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
-          box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
 }
 
 header h1 {
@@ -220,8 +249,6 @@ header h2 {
   margin: 0 22%;
   margin-top: 12%;
   border-radius: 5px;
-  -webkit-animation: rotateWordsSecond 18s linear infinite 1s;
-          animation: rotateWordsSecond 18s linear infinite 1s;
 }
 
 header h2 abbr {
@@ -421,7 +448,7 @@ header h2 {
 .preamble h3 {
   color: #003366;
   padding-bottom: 10px;
-  font-family: "Elsie Swash Caps", cursive;
+  font-family: "Kanit", sans-serif;
 }
 
 .supporting {
@@ -429,8 +456,8 @@ header h2 {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   grid-gap: 20px;
       grid-template-areas: 'explanation participation' 'benefits benefits' 'requirements requirements' 'footer footer';
   /* Styling sidebar */
@@ -441,18 +468,36 @@ header h2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: explanation;
+  padding: 15px;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+.supporting .explanation:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
           box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
-  padding: 15px;
+  background: #00bfff;
+  border-radius: 10px;
 }
 
 .supporting .participation {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: participation;
+  padding: 15px;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+.supporting .participation:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
           box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
-  padding: 15px;
+  background: #00bfff;
+  border-radius: 10px;
 }
 
 .supporting .benefits {
@@ -460,9 +505,19 @@ header h2 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: benefits;
+  padding: 15px;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  color: #000;
+}
+
+.supporting .benefits:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
           box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
-  padding: 15px;
+  background: #00bfff;
+  border-radius: 10px;
 }
 
 .supporting .requirements {
@@ -470,9 +525,19 @@ header h2 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: requirements;
+  padding: 15px;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+  color: #000;
+}
+
+.supporting .requirements:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
           box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
-  padding: 15px;
+  background: #00bfff;
+  border-radius: 10px;
 }
 
 .supporting aside {
@@ -509,9 +574,7 @@ header h2 {
 }
 
 aside {
-  -webkit-box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
-          box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
-  height: 55%;
+  height: 60%;
 }
 
 aside .select {
@@ -538,7 +601,7 @@ aside aside nav li a:hover {
 .main h3 {
   color: #000066;
   padding-bottom: 10px;
-  font-family: "Elsie Swash Caps", cursive;
+  font-family: "Kanit", sans-serif;
 }
 
 .design-selection {
@@ -547,10 +610,20 @@ aside aside nav li a:hover {
   background: #231333;
   margin: 20px;
   border-bottom-right-radius: 50px;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
 }
 
 .design-selection li a {
   color: #fff;
+}
+
+.design-selection:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
+          box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
 }
 
 .design-archives {
@@ -559,10 +632,20 @@ aside aside nav li a:hover {
   background: #233;
   margin: 20px;
   border-bottom-right-radius: 50px;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
 }
 
 .design-archives li a {
   color: #fff;
+}
+
+.design-archives:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
+          box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
 }
 
 .zen-resources {
@@ -571,6 +654,8 @@ aside aside nav li a:hover {
   background: #453;
   margin: 20px;
   border-bottom-right-radius: 50px;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
 }
 
 .zen-resources abbr {
@@ -585,6 +670,14 @@ aside aside nav li a:hover {
 
 .zen-resources [title] {
   color: #fff;
+}
+
+.zen-resources:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
+          box-shadow: inset 0 0 20px #17e18f, 0 0 50px #003366;
 }
 
 aside .select {
@@ -657,6 +750,8 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translateY(360deg, 3rem);
+          transform: translateY(360deg, 3rem);
 }
 
 footer a {
