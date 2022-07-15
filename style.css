@@ -190,7 +190,7 @@ header h2 {
   font-weight: bold;
 }
 .summary a:hover {
-  color: rgba(153, 136, 204, 0.6666666667);
+  color: rgba(68, 42, 148, 0.667);
   transition: 0.1s;
 }
 .summary abbr {
@@ -198,25 +198,25 @@ header h2 {
   font-weight: bold;
 }
 .summary abbr:hover {
-  color: rgba(153, 136, 204, 0.6666666667);
+  color: rgba(68, 42, 148, 0.667);
   transition: 0.1s;
 }
 
 .preamble {
-  padding: 20px;
+  padding: 40px;
   border-radius: 5px 0 0 5px;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 .preamble abbr {
   text-decoration: none;
   font-weight: bold;
 }
 .preamble abbr:hover {
-  color: rgba(153, 136, 204, 0.6666666667);
+  color: rgba(68, 42, 148, 0.667);
   transition: 0.1s;
 }
 .preamble h3 {
-  color: #2a2aa7;
+  color: #566806;
   font-size: 1.8rem;
   padding-bottom: 20px;
   font-family: "Maven Pro", sans-serif;
@@ -245,7 +245,6 @@ header h2 {
 .supporting .explanation:hover {
   transform: scale(1.1);
   box-shadow: inset 0 0 20px rgb(116, 189, 160), 0 0 50px #2a2aa7;
-  background-color: rgb(64, 101, 168);
   color: #fff;
 }
 .supporting .participation {
@@ -259,7 +258,6 @@ header h2 {
 .supporting .participation:hover {
   transform: scale(1.1);
   box-shadow: inset 0 0 20px rgb(116, 189, 160), 0 0 50px #2a2aa7;
-  background-color: rgb(64, 101, 168);
   color: #fff;
 }
 .supporting .benefits {
@@ -273,7 +271,6 @@ header h2 {
 .supporting .benefits:hover {
   transform: scale(1.02);
   box-shadow: inset 0 0 20px rgb(116, 189, 160), 0 0 50px #2a2aa7;
-  background-color: rgb(64, 101, 168);
   color: #fff;
 }
 .supporting .requirements {
@@ -287,7 +284,6 @@ header h2 {
 .supporting .requirements:hover {
   transform: scale(1.02);
   box-shadow: inset 0 0 20px rgb(116, 189, 160), 0 0 50px #2a2aa7;
-  background-color: rgb(64, 101, 168);
   color: #fff;
 }
 .supporting aside {
@@ -330,7 +326,7 @@ aside aside nav li a {
   line-height: 2rem;
 }
 aside aside nav li a:hover {
-  color: rgba(153, 136, 204, 0.6666666667);
+  color: rgba(68, 42, 148, 0.667);
   transition: 0.1s;
 }
 
@@ -346,9 +342,15 @@ aside aside nav li a:hover {
   background: rgba(82, 51, 112, 0.5568627451);
   margin: 20px;
   border-radius: 10px;
+  transition: 1s ease-out;
 }
 .design-selection li a {
   color: #fff;
+}
+
+.design-selection:hover {
+  transform: scale(1.1);
+  box-shadow: inset 0 0 20px rgb(116, 189, 160), 0 0 50px #2a2aa7;
 }
 
 .design-archives {
@@ -357,9 +359,15 @@ aside aside nav li a:hover {
   background: rgba(64, 94, 94, 0.582);
   margin: 20px;
   border-radius: 10px;
+  transition: 1s ease-out;
 }
 .design-archives li a {
   color: #fff;
+}
+
+.design-archives:hover {
+  transform: scale(1.1);
+  box-shadow: inset 0 0 20px rgb(116, 189, 160), 0 0 50px #2a2aa7;
 }
 
 .zen-resources {
@@ -368,16 +376,22 @@ aside aside nav li a:hover {
   background: rgba(97, 121, 73, 0.596);
   margin: 20px;
   border-radius: 10px;
+  transition: 1s ease-out;
 }
 .zen-resources abbr {
   color: #fff;
 }
 .zen-resources abbr:hover {
-  color: rgba(153, 136, 204, 0.6666666667);
+  color: rgba(68, 42, 148, 0.667);
   transition: 0.1s;
 }
 .zen-resources [title] {
   color: #fff;
+}
+
+.zen-resources:hover {
+  transform: scale(1.1);
+  box-shadow: inset 0 0 20px rgb(116, 189, 160), 0 0 50px #2a2aa7;
 }
 
 aside .select {
@@ -397,7 +411,7 @@ aside nav li a {
 }
 
 aside nav li a:hover {
-  color: rgba(153, 136, 204, 0.6666666667);
+  color: rgba(68, 42, 148, 0.667);
   transition: 0.1s;
 }
 
@@ -438,7 +452,7 @@ aside nav li a:hover {
 footer {
   display: flex;
   grid-area: footer;
-  background: #5b5bb6;
+  background: rgba(91, 91, 182, 0.4235294118);
   border-radius: 3px;
   font-weight: bold;
   align-items: center;
@@ -452,7 +466,7 @@ footer a {
 }
 footer a:hover {
   color: #fff;
-  background: #008000;
+  background: rgba(54, 161, 134, 0.4196078431);
   border-radius: 5px;
 }
 

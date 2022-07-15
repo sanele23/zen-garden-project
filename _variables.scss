@@ -1,14 +1,10 @@
-// // @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
-
-
 // styles suggested by Sanele
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Maven+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Elsie+Swash+Caps:wght@900&display=swap');
 
 
 // image background variables
+// this will be for the entire webpage
 $cover-background: linear-gradient(
     rgba(0, 0, 0, .8),
         rgba(0, 0, 0, .8)
@@ -25,35 +21,35 @@ $logo-color-overlay: linear-gradient(rgba(0, 0, 0, .5) rgba(5, 5, 5, .5));
 $logo-text: #fff;
 $text-parimary-size: 40px;
 $text-primary-font: 'Comfortaa', cursive;
-$footer-hover-color: #008000;
+
 
 // sub-heading and paragraph formatting
+// links
 $paragraphs: 'Maven Pro', sans-serif; // paragraph font
 $paragraph-size: 26px;
 $paragraph-color: #fff;
 $sub-header: 'Maven Pro', sans-serif; // sub-heading font
 
-
-
+$road-color-h3: #566806; // Road to enlightenment header color
 $h2-color: #fff;
 $bg-links-color: #e9e9dc; 
 $abbr-color: #ebee49;  
 $headings: #2a2aa7;
-$footer-background: #5b5bb6;
+
 $border-radius: 3px;
 
 //Hover links color -- suplimentary
 $background-color: rgba(255, 255, 255, 0.219);
-$hover: #98ca;
+$hover: rgba(68, 42, 148, 0.667);
 
-// Sidebar background colors
+// Sidebar variables: text size and background color
 $selectColor: #5233708e;
 $archiveColor: rgba(64, 94, 94, 0.582);
 $resourceColor: rgba(97, 121, 73, 0.596);
 $heading-size: 1.6rem;
 
 //Preamble background color
-$preamble-background: rgb(186, 7, 241);
+$preamble-background: rgb(241, 235, 243);
 
 //Background box shadow property used
 $box-shadow: inset 0 0 20px rgb(116, 189, 160),
@@ -61,3 +57,7 @@ $box-shadow: inset 0 0 20px rgb(116, 189, 160),
 
 // side-navigation
 $side-padding: 20px;
+
+// footer variables
+$footer-hover-color: #36a1866b;
+$footer-background: #5b5bb66c;

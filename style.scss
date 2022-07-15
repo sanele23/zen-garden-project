@@ -57,11 +57,17 @@ aside {
     background: $selectColor;
     margin: 20px;
     border-radius: 10px;
-    // @include bg-aside-headings;
+    transition: 1s ease-out;
 
     li a{
         color: $logo-text;
     }
+}
+
+// hover effects on the selection sidebar
+.design-selection:hover {
+    transform: scale(1.1);
+    box-shadow: $box-shadow;
 }
 
 .design-archives {
@@ -70,12 +76,19 @@ aside {
     background: $archiveColor;
     margin: 20px;
     border-radius: 10px;
-    // @include bg-aside-headings;
+    transition: 1s ease-out;
 
-    li a {
+    li a{
         color: $logo-text;
     }
 }
+
+// hover effects on the archives sidebar
+.design-archives:hover {
+    transform: scale(1.1);
+    box-shadow: $box-shadow;
+}
+
 
 .zen-resources {
     color: $logo-text;
@@ -83,7 +96,7 @@ aside {
     background: $resourceColor;
     margin: 20px;
     border-radius: 10px;
-    // @include bg-aside-headings;
+    transition: 1s ease-out;
 
     abbr {
         color: $logo-text;
@@ -95,6 +108,12 @@ aside {
     [title] {
         color: $logo-text;
     }
+}
+
+// hover effects on the resources sidebar
+.zen-resources:hover {
+    transform: scale(1.1);
+    box-shadow: $box-shadow;
 }
 
 aside .select {
@@ -143,6 +162,8 @@ aside nav li a:hover {
 .zen-resources abbr {
     text-decoration: none;
 }
+
+// footer
 footer {
     display: flex;
     grid-area: footer;
