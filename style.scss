@@ -53,10 +53,10 @@ aside {
 
 .design-selection {
     color: $logo-text;
-    padding: 10px;
+    padding: $side-padding;
     background: $selectColor;
     margin: 20px;
-    border-bottom-right-radius: 50px;
+    border-radius: 10px;
     // @include bg-aside-headings;
 
     li a{
@@ -66,10 +66,10 @@ aside {
 
 .design-archives {
     color: $logo-text;
-    padding: 10px;
+    padding: $side-padding;
     background: $archiveColor;
     margin: 20px;
-    border-bottom-right-radius: 50px;
+    border-radius: 10px;
     // @include bg-aside-headings;
 
     li a {
@@ -79,10 +79,10 @@ aside {
 
 .zen-resources {
     color: $logo-text;
-    padding: 10px;
+    padding: $side-padding;
     background: $resourceColor;
     margin: 20px;
-    border-bottom-right-radius: 50px;
+    border-radius: 10px;
     // @include bg-aside-headings;
 
     abbr {
@@ -99,7 +99,8 @@ aside {
 
 aside .select {
     color: $h2-color;
-    font-size: 30px;
+    font-size: $heading-size;
+    padding-bottom: 20px;
 }
 aside nav li {
     list-style-type: none;
@@ -116,11 +117,15 @@ aside nav li a:hover {
 
 .design-archives h3 {
     color: $h2-color;
-    margin-top: 30px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    font-size: $heading-size;
 }
 .zen-resources h3 {
     color: $h2-color;
-    margin-top: 20%;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    font-size: $heading-size;
 }
 .zen-resources ul li {
     list-style-type: none;
@@ -141,8 +146,9 @@ aside nav li a:hover {
 footer {
     display: flex;
     grid-area: footer;
-    background: $headings;
-    box-shadow: $box-shadow;
+    background: $footer-background;
+    // box-shadow: $box-shadow;
+    border-radius: 3px;
     font-weight: bold;
     align-items: center;
     justify-content: center;

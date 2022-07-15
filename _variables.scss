@@ -1,34 +1,63 @@
+// // @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&display=swap');
+
+
+// styles suggested by Sanele
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Maven+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Elsie+Swash+Caps:wght@900&display=swap');
 
-//CSS Zen Garden
-$logo-color-overlay: linear-gradient(rgba(0, 0, 0, .5) rgba(5, 5, 5, .5)); //rgba(black, .5) (rgba(20,0,20,0.8), rgba(60,20,20,0.8))
+
+// image background variables
+$cover-background: linear-gradient(
+    rgba(0, 0, 0, .8),
+        rgba(0, 0, 0, .8)
+    ), url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODQ4NDUwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMS5qcGc.jpg') fixed;
+
+$support-background: linear-gradient(
+    rgba(96, 58, 107, 0.8),
+    rgba(96, 58, 107, 0.8)
+    ), url('https://images.pexels.com/videos/3194277/free-video-3194277.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500') fixed;
+
+
+// Heading (h1) formatting
+$logo-color-overlay: linear-gradient(rgba(0, 0, 0, .5) rgba(5, 5, 5, .5));
 $logo-text: #fff;
 $text-parimary-size: 40px;
-$text-primary-font: 'Elsie Swash Caps', cursive;
+$text-primary-font: 'Comfortaa', cursive;
 $footer-hover-color: #008000;
-$paragraphs: 'Elsie Swash Caps', cursive;
-$sub-header: 'Elsie Swash Caps', cursive;
-$confortaa: 'Comfortaa', cursive;;
+
+// sub-heading and paragraph formatting
+$paragraphs: 'Maven Pro', sans-serif; // paragraph font
+$paragraph-size: 26px;
+$paragraph-color: #fff;
+$sub-header: 'Maven Pro', sans-serif; // sub-heading font
+
 
 
 $h2-color: #fff;
-$bg-links-color: #000066;   
-$headings: #003366;
+$bg-links-color: #e9e9dc; 
+$abbr-color: #ebee49;  
+$headings: #2a2aa7;
+$footer-background: #5b5bb6;
+$border-radius: 3px;
 
-//Hover links color
+//Hover links color -- suplimentary
+$background-color: rgba(255, 255, 255, 0.219);
 $hover: #98ca;
 
 // Sidebar background colors
-$selectColor: #231333;
-$archiveColor: #233;
-$resourceColor: #453;
+$selectColor: #5233708e;
+$archiveColor: rgba(64, 94, 94, 0.582);
+$resourceColor: rgba(97, 121, 73, 0.596);
+$heading-size: 1.6rem;
 
 //Preamble background color
-$preamble-background: rgb(120, 241, 7);
+$preamble-background: rgb(186, 7, 241);
 
 //Background box shadow property used
-$box-shadow: inset 0 0 20px rgba(23, 225, 143, 1),
+$box-shadow: inset 0 0 20px rgb(116, 189, 160),
     0 0 50px $headings;
+
+// side-navigation
+$side-padding: 20px;
