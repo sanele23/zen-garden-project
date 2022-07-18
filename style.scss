@@ -173,12 +173,12 @@ footer {
     font-weight: bold;
     align-items: center;
     justify-content: center;
-
+    
 
     a {
         color: $logo-text;
         text-decoration: none;
-        font-family: bold;
+        font-family: $text-primary-font;
         padding: 10px 20px;
         
     }

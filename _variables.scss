@@ -18,8 +18,8 @@ $support-background: linear-gradient(
 
 // Heading (h1) formatting
 $logo-color-overlay: linear-gradient(rgba(0, 0, 0, .5) rgba(5, 5, 5, .5));
-$logo-text: #fff;
-$text-parimary-size: 40px;
+$logo-text: rgb(255, 255, 255);
+$text-parimary-size: 80px;
 $text-primary-font: 'Comfortaa', cursive;
 
 
@@ -29,8 +29,9 @@ $paragraphs: 'Maven Pro', sans-serif; // paragraph font
 $paragraph-size: 26px;
 $paragraph-color: #fff;
 $sub-header: 'Maven Pro', sans-serif; // sub-heading font
+$link-color: rgb(152, 38, 218);
 
-$road-color-h3: #566806; // Road to enlightenment header color
+$road-color-h3: #0c0c0b; // Road to enlightenment header color
 $h2-color: #fff;
 $bg-links-color: #e9e9dc; 
 $abbr-color: #ebee49;  

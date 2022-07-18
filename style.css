@@ -18,14 +18,26 @@
 }
 .page-wrapper .intro {
   grid-area: intro;
-  background-color: rgba(170, 145, 145, 0.7);
+  background-color: rgba(243, 236, 236, 0.7);
+}
+.page-wrapper .intro p {
+  font-family: "Comfortaa", cursive;
 }
 .page-wrapper .main {
+  font-family: "Comfortaa", cursive;
   grid-area: main;
   padding: 20px;
 }
+.page-wrapper .main h3 {
+  font-size: 28px;
+  font-family: "Maven Pro", sans-serif;
+}
 .page-wrapper .sidebar {
+  font-family: "Comfortaa", cursive;
   grid-area: aside;
+}
+.page-wrapper .sidebar h3 {
+  font-family: "Maven Pro", sans-serif;
 }
 
 .intro {
@@ -38,9 +50,11 @@
 }
 .intro header {
   grid-area: header;
+  font-family: "Maven Pro", sans-serif;
 }
 .intro .summary {
   grid-area: summery;
+  font-family: "Comfortaa", cursive;
   animation: moving-container-summary 5s ease-in-out;
 }
 @keyframes moving-container-summary {
@@ -99,21 +113,20 @@ header {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 header h1 {
   color: #fff;
-  font-size: 40px;
-  padding: 40px;
+  font-size: 80px;
+  padding: 80px;
   font-family: "Comfortaa", cursive;
   text-transform: uppercase;
 }
 header h2 {
   position: relative;
-  color: #fff;
+  color: rgb(255, 255, 255);
   font-size: 50px;
   text-align: center;
-  margin: 0 22%;
-  margin-top: 12%;
   border-radius: 5px;
   animation: rotateWordsSecond 18s linear infinite 1s;
 }
@@ -177,7 +190,7 @@ header h2 {
 
 .summary {
   padding: 20px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   height: 8rem;
   margin-top: -18%;
   border-radius: 0 5px 5px 0px;
@@ -186,7 +199,7 @@ header h2 {
 }
 .summary a {
   text-decoration: none;
-  color: #fff;
+  color: rgb(152, 38, 218);
   font-weight: bold;
 }
 .summary a:hover {
@@ -210,14 +223,15 @@ header h2 {
 .preamble abbr {
   text-decoration: none;
   font-weight: bold;
+  color: rgb(152, 38, 218);
 }
 .preamble abbr:hover {
   color: rgba(68, 42, 148, 0.667);
   transition: 0.1s;
 }
 .preamble h3 {
-  color: #566806;
-  font-size: 1.8rem;
+  color: #0c0c0b;
+  font-size: 2.8rem;
   padding-bottom: 20px;
   font-family: "Maven Pro", sans-serif;
 }
@@ -294,7 +308,7 @@ header h2 {
   text-decoration: none;
 }
 .supporting a:hover {
-  color: #fff;
+  color: rgb(255, 255, 255);
   transition: 0.1s;
   background: linear-gradient(rgba(0, 0, 0, 0.5) rgba(5, 5, 5, 0.5));
 }
@@ -303,7 +317,7 @@ header h2 {
   color: #ebee49;
 }
 .supporting abbr:hover {
-  color: #fff;
+  color: rgb(255, 255, 255);
   transition: 0.1s;
   background: linear-gradient(rgba(0, 0, 0, 0.5) rgba(5, 5, 5, 0.5));
 }
@@ -337,7 +351,7 @@ aside aside nav li a:hover {
 }
 
 .design-selection {
-  color: #fff;
+  color: rgb(255, 255, 255);
   padding: 20px;
   background: rgba(82, 51, 112, 0.5568627451);
   margin: 20px;
@@ -345,7 +359,7 @@ aside aside nav li a:hover {
   transition: 1s ease-out;
 }
 .design-selection li a {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .design-selection:hover {
@@ -354,7 +368,7 @@ aside aside nav li a:hover {
 }
 
 .design-archives {
-  color: #fff;
+  color: rgb(255, 255, 255);
   padding: 20px;
   background: rgba(64, 94, 94, 0.582);
   margin: 20px;
@@ -362,7 +376,7 @@ aside aside nav li a:hover {
   transition: 1s ease-out;
 }
 .design-archives li a {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .design-archives:hover {
@@ -371,7 +385,7 @@ aside aside nav li a:hover {
 }
 
 .zen-resources {
-  color: #fff;
+  color: rgb(255, 255, 255);
   padding: 20px;
   background: rgba(97, 121, 73, 0.596);
   margin: 20px;
@@ -379,14 +393,14 @@ aside aside nav li a:hover {
   transition: 1s ease-out;
 }
 .zen-resources abbr {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 .zen-resources abbr:hover {
   color: rgba(68, 42, 148, 0.667);
   transition: 0.1s;
 }
 .zen-resources [title] {
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
 
 .zen-resources:hover {
@@ -459,13 +473,13 @@ footer {
   justify-content: center;
 }
 footer a {
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  font-family: bold;
+  font-family: "Comfortaa", cursive;
   padding: 10px 20px;
 }
 footer a:hover {
-  color: #fff;
+  color: rgb(255, 255, 255);
   background: rgba(54, 161, 134, 0.4196078431);
   border-radius: 5px;
 }
