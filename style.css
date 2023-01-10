@@ -117,8 +117,8 @@ header {
 }
 header h1 {
   color: #fff;
-  font-size: 80px;
-  padding: 80px;
+  font-size: 81px;
+  padding: 81px;
   font-family: "Comfortaa", cursive;
   text-transform: uppercase;
 }
@@ -450,7 +450,7 @@ aside nav li a:hover {
 .zen-resources ul li a {
   text-decoration: none;
   line-height: 2rem;
-  color: #000;
+  color: #0000;
 }
 
 .zen-resources ul li a:hover {
@@ -460,7 +460,7 @@ aside nav li a:hover {
 }
 
 .zen-resources abbr {
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 footer {
